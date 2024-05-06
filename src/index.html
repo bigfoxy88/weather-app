@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How's the weather</title>
+</head>
+<body>
+    <form id="searchLocation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+        <input type="search" name="" id="search">
+        <input type="submit" value="search">
+    </form>
+    <div  id='loader'class="loader"></div> 
+
+    <div class="toogleUnits">
+        <button class="celcius">c</button>
+        <button class="farenheit">f</button>
+    </div>
+
+    <div class="localConditions">
+        <div id="weatherConditions">
+            <img class="weatherRepresentation" src="" alt="">
+            <p class="condition"></p>
+        </div>
+        <div class="location">
+            <h3 class="city"></h3>
+            <h4 class="country"></h4>
+        </div>
+    </div>
+    
+    <div class="otherWeatherAttributes">
+        <div id="temp">
+            <span>Temp:  </span>
+            <p class="temp"></p>
+            <span class="CorF"></span>
+        </div>
+        <div id="feelsLike">
+            <span>Feels like:</span>
+            <p class="feelOfTemp"></p>
+            <span class="CorF"></span>
+        </div>
+        <div id="humidity">
+            <span>Humidity:</span>
+            <p class="humid"></p>
+        </div>
+       <div id="precipitation">
+            <span>precipitation: </span>
+            <p class="percip"></p>
+       </div>
+       <div id="windDir">
+        <span>Wind_dir:</span>
+        <p class="winddir"></p>
+       </div>
+       <div id="windSpeed">
+        <span>Wind speed:</span>
+        <p class="windsp"></p>
+       </div>
+
+    </div>
+</body>
+</html>
